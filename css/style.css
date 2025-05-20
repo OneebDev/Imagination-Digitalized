@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rotate-banner {
+  transform: rotate(-10deg);
+}
