@@ -1,7 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*
+  This file would typically contain your Tailwind CSS directives:
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-.rotate-banner {
-  transform: rotate(-10deg);
+  And then any custom CSS, like your keyframes.
+*/
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+/* These are now defined in tailwind.config.js for responsive control */
+.animate-marquee3 {
+  animation: marquee 10s linear infinite;
+}
+.animate-marquee1 {
+  animation: marquee2 10s linear infinite;
 }
